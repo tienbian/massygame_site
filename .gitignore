@@ -2,7 +2,7 @@
 capybara-*.html
 .rspec
 /log
-/tmp
+
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
@@ -40,3 +40,11 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+config/database.yml
+config/database.yml~
+Gemfile.lock
+db/schema.rb
