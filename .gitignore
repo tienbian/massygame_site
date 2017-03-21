@@ -48,3 +48,6 @@ config/database.yml
 config/database.yml~
 Gemfile.lock
 db/schema.rb
+**/.DS_Store
+.DS_Store
+.ruby-version
