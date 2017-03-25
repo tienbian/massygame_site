@@ -219,7 +219,7 @@ section h2 {
   font-size: 50px;
 }
 section.download {
-  padding: 150px 0;
+  padding: 50px 0;
   position: relative;
 }
 section.download h2 {
@@ -364,7 +364,7 @@ section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
 footer {
-  background-color: #222222;
+  background-color: black;
   padding: 25px 0;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
@@ -387,9 +387,9 @@ footer ul li a.active {
   text-decoration: none;
 }
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background-color: black;
+/*  background: -webkit-linear-gradient(#fdcc52, #fdc539);
+  background: linear-gradient(#fdcc52, #fdc539);*/
 }
 .text-primary {
   color: #fdcc52;
