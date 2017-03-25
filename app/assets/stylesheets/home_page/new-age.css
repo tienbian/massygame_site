@@ -59,7 +59,7 @@ p {
   margin-bottom: 20px;
 }
 .navbar-default {
-  background-color: white;
+  background-color: #222;
   border-color: rgba(34, 34, 34, 0.05);
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -127,7 +127,7 @@ p {
     color: white;
   }
   .navbar-default.affix {
-    background-color: white;
+    background-color: black;
     border-color: rgba(34, 34, 34, 0.1);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -151,13 +151,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("bg-pattern.png"), #7b4397;
-  /* fallback for old browsers */
-  background: url("bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  background-color: black;
 }
 header .header-content {
   text-align: center;
