@@ -163,27 +163,9 @@ section h2 {
 
 footer {
   background-color: #2c2c2c;
-  padding: 25px 0;
-  color: rgba(255, 255, 255, 0.3);
-  text-align: center;
-}
-footer p {
-  font-size: 12px;
-  margin: 0;
-}
-footer ul {
-  margin-bottom: 0;
-}
-footer ul li a {
-  font-size: 12px;
   color: rgba(255, 255, 255, 0.3);
 }
-footer ul li a:hover,
-footer ul li a:focus,
-footer ul li a:active,
-footer ul li a.active {
-  text-decoration: none;
-}
+
 .bg-primary {
   background-color: #000000;
 /*  background: -webkit-linear-gradient(#fdcc52, #fdc539);
@@ -191,6 +173,9 @@ footer ul li a.active {
 }
 .bg-secondary {
   background-color: #2c2c2c;
+}
+.bg-third {
+  background-color: #121212;
 }
 .text-primary {
   color: #fdcc52;
@@ -279,3 +264,12 @@ body {
   }
 }
 .top-buffer { margin-top:10px; }
+.btn_subscribe {
+  background: url("btn_subscribe.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  height: 42px;
+  width: 119px;
+  border: none;
+}
