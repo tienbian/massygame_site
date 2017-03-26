@@ -1,2 +1,2 @@
-class HomePageController < ApplicationController
+class HomePageController < BaseController
 end
