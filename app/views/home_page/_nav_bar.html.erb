@@ -38,15 +38,15 @@
         </li>
 
         <li>
-          <a><%= image_tag "home_page/cate_abt_us.jpg", class:"img-responsive", alt:"" %></a>
+          <%= link_to image_tag('home_page/cate_abt_us.jpg'), page_about_path, :class => 'img-responsive', alt:"" %>
         </li>
 
         <li>
-          <a><%= image_tag "home_page/cate_blog.jpg", class:"img-responsive", alt:"" %></a>
+          <%= link_to image_tag('home_page/cate_blog.jpg'), page_blog_path, :class => 'img-responsive', alt:"" %>
         </li>
 
         <li>
-          <a><%= image_tag "home_page/cate_contact.jpg", class:"img-responsive", alt:"" %></a>
+          <%= link_to image_tag('home_page/cate_contact.jpg'), page_contact_path, :class => 'img-responsive', alt:"" %>
         </li>
       </ul>
 
@@ -54,3 +54,5 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
+
+
