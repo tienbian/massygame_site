@@ -3,21 +3,31 @@
         <h2 class="text-center" style="color: white;"> OUR PORTFOLIO </h2>
 
         <div class="row">
-            <div class="col-md-5ths col-xs-6 portfolio-detail">
-              <%= image_tag "home_page/portfolio_1.jpg", class:"img-responsive active", alt:"" %>
-            </div>
-            <div class="col-md-5ths col-xs-6 portfolio-detail">
-              <%= image_tag "home_page/portfolio_2.jpg", class:"img-responsive active", alt:"" %>
-            </div>
-            <div class="col-md-5ths col-xs-6 portfolio-detail">
-              <%= image_tag "home_page/portfolio_3.jpg", class:"img-responsive active", alt:"" %>
-            </div>
-            <div class="col-md-5ths col-xs-6 portfolio-detail">
-              <%= image_tag "home_page/portfolio_4.jpg", class:"img-responsive active", alt:"" %>
-            </div>
-            <div class="col-md-5ths col-xs-6 portfolio-detail">
-              <%= image_tag "home_page/portfolio_5.jpg", class:"img-responsive active", alt:"" %>
-            </div>
+            <%= link_to service_path(1) do %>
+              <div class="col-md-5ths col-xs-6 portfolio-detail">
+                <%=image_tag 'home_page/portfolio_1.jpg', class: "img-responsive active", alt:"" %>
+              </div>
+            <% end %>
+            <%= link_to service_path(1) do %>
+              <div class="col-md-5ths col-xs-6 portfolio-detail">
+                <%=image_tag 'home_page/portfolio_2.jpg', class: "img-responsive active", alt:"" %>
+              </div>
+            <% end %>
+            <%= link_to service_path(1) do %>
+              <div class="col-md-5ths col-xs-6 portfolio-detail">
+                <%=image_tag 'home_page/portfolio_3.jpg', class: "img-responsive active", alt:"" %>
+              </div>
+            <% end %>
+            <%= link_to service_path(1) do %>
+              <div class="col-md-5ths col-xs-6 portfolio-detail">
+                <%=image_tag 'home_page/portfolio_4.jpg', class: "img-responsive active", alt:"" %>
+              </div>
+            <% end %>
+            <%= link_to service_path(1) do %>
+              <div class="col-md-5ths col-xs-6 portfolio-detail">
+                <%=image_tag 'home_page/portfolio_5.jpg', class: "img-responsive active", alt:"" %>
+              </div>
+            <% end %>
         </div>
 
         <div class="row top-buffer">
