@@ -1,7 +1,33 @@
 <header>
   <div class="container">
-      <div class="row">
-        <%= image_tag "home_page/slider_top_1.jpg", class:"img-responsive", alt:"" %>  
+  	<div id="myCarouselHeader" class="carousel slide" data-ride="carousel" style="min-height: 300px;">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag "home_page/slider_top_1.jpg", class: "img-responsive", alt: "" %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "home_page/slider_top_1.jpg", class: "img-responsive", alt: "" %>
+        </div>
+
+        <div class="item">
+          <%= image_tag "home_page/slider_top_1.jpg", class: "img-responsive", alt: "" %>
+        </div>
       </div>
+    </div>
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarouselHeader" data-slide-to="0" class="active">
+          <%= image_tag "home_page/slider_top_1.jpg", class:"img-responsive", alt:"" %>
+        </li>
+        <li data-target="#myCarouselHeader" data-slide-to="1">
+          <%= image_tag "home_page/slider_top_1.jpg", class:"img-responsive", alt:"" %>
+        </li>
+        <li data-target="#myCarouselHeader" data-slide-to="2">
+          <%= image_tag "home_page/slider_top_1.jpg", class:"img-responsive", alt:"" %>
+        </li>
+      </ol>
   </div>
 </header>
