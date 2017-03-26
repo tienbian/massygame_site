@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
       </button>
-      <a class=" page-scroll" href="#page-top"><%= image_tag "home_page/logo.jpg", class:"img-responsive", alt:"" %></a>
+      <a class=" page-scroll" href="#page-top"><%=link_to image_tag('home_page/logo.jpg'), root_path, class:"img-responsive", alt:"" %></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,15 +38,15 @@
         </li>
 
         <li>
-          <%= link_to image_tag('home_page/cate_abt_us.jpg'), page_about_path, :class => 'img-responsive', alt:"" %>
+          <%= link_to image_tag('home_page/cate_abt_us.jpg'), page_about_path, class: 'img-responsive', alt:"" %>
         </li>
 
         <li>
-          <%= link_to image_tag('home_page/cate_blog.jpg'), page_blog_path, :class => 'img-responsive', alt:"" %>
+          <%= link_to image_tag('home_page/cate_blog.jpg'), page_blog_path, class: 'img-responsive', alt:"" %>
         </li>
 
         <li>
-          <%= link_to image_tag('home_page/cate_contact.jpg'), page_contact_path, :class => 'img-responsive', alt:"" %>
+          <%= link_to image_tag('home_page/cate_contact.jpg'), page_contact_path, class: 'img-responsive', alt:"" %>
         </li>
       </ul>
 
