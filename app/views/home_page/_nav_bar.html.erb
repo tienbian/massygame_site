@@ -5,14 +5,14 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
       </button>
-      <%=link_to image_tag('home_page/logo.jpg'), root_path, class:"img-responsive", alt:"", method: :get %>
+      <a class="page-scroll" href="#page-top"><%=link_to image_tag('home_page/logo.jpg'), root_path, class: "img-responsive", alt: "", method: :get %></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         
         <li class="dropdown">
-          <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#service"><%= image_tag "home_page/cate_service.jpg", class:"img-responsive", alt:"" %> </a>
+          <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#service"><%= image_tag "home_page/cate_service.jpg", class: "img-responsive", alt:"" %> </a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -25,7 +25,7 @@
         </li>
 
         <li class="dropdown">
-          <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#portfolio"><%= image_tag "home_page/cate_portfolio.jpg", class:"img-responsive", alt:"" %> </a>
+          <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#portfolio"><%= image_tag "home_page/cate_portfolio.jpg", class: "img-responsive", alt:"" %> </a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
