@@ -1,0 +1,58 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="page-scroll" href="#page-top"><%=link_to image_tag('home_page/logo.jpg'), root_path, class: "img-responsive", alt: "", method: :get %></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#service"><%= image_tag "home_page/cate_service.jpg", class: "img-responsive", alt:"" %> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="#portfolio"><%= image_tag "home_page/cate_portfolio.jpg", class: "img-responsive", alt:"" %> </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <%= link_to image_tag('home_page/cate_abt_us.jpg'), page_about_path, class: 'img-responsive', alt:"" %>
+        </li>
+
+        <li>
+          <%= link_to image_tag('home_page/cate_blog.jpg'), page_blog_path, class: 'img-responsive', alt:"" %>
+        </li>
+
+        <li>
+          <%= link_to image_tag('home_page/cate_contact.jpg'), page_contact_path, class: 'img-responsive', alt:"" %>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+

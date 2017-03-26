@@ -28,41 +28,41 @@
             <div class="col-md-3">
               <div class="img-service-homepage-container">
                 <%= image_tag "home_page/service_1.jpg", class: "img-responsive", alt:"", id: "img_service_homepage" %>
-                <a href="#">
+                <%= link_to service_path(1) do %>
                   <div class="overlay">
                     <div class="text">Hello World</div>
                   </div>
-                </a>
+                <% end %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="img-service-homepage-container">
                 <%= image_tag "home_page/service_2.jpg", class: "img-responsive", alt:"", id: "img_service_homepage" %>
-                <a href="#">
+                <%= link_to service_path(2) do %>
                   <div class="overlay">
                     <div class="text">Hello World</div>
                   </div>
-                </a>
+                <% end %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="img-service-homepage-container">
                 <%= image_tag "home_page/service_3.jpg", class: "img-responsive", alt:"", id: "img_service_homepage" %>
-                <a href="#">
+                <%= link_to service_path(3) do %>
                   <div class="overlay">
                     <div class="text">Hello World</div>
                   </div>
-                </a>
+                <% end %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="img-service-homepage-container">
                 <%= image_tag "home_page/service_4.jpg", class: "img-responsive", alt:"", id: "img_service_homepage"%>
-                <a href="#">
+                <%= link_to service_path(4) do %>
                   <div class="overlay">
                     <div class="text">Hello World</div>
                   </div>
-                </a>
+                <% end %>
               </div>
             </div>
 
