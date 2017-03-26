@@ -1,0 +1,101 @@
+(function($) {
+    "use strict"; // Start of use strict
+
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(document).on('click', 'a.page-scroll', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 100
+    });
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+        offset: {
+            top: 50
+        }
+    })
+
+    
+})(jQuery); // End of use strict
+$(document).ready(function() {
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    $('.picture-fade').click( function () {
+        modal.style.display = "block";
+        modalImg.src = $(this).find('img').attr('src');
+        captionText.innerHTML = "testing";
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    $('.close').click( function() {
+        modal.style.display = "none";
+    });
+
+    var wrapper = $('.portfolio-detail');
+    var images = null;
+    var running = null;
+
+    images = [];
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo.jpg') %>", alt: '' } ) );
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo_2.jpg') %>", alt: '' } ) );
+    wrapper.eq(0).append(images);
+    
+    images = [];
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo.jpg') %>", alt: '' } ) );
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo_2.jpg') %>", alt: '' } ) );
+    wrapper.eq(1).append(images);
+
+    images = [];
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo.jpg') %>", alt: '' } ) );
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo_2.jpg') %>", alt: '' } ) );
+    wrapper.eq(2).append(images);
+    images = [];
+
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo.jpg') %>", alt: '' } ) );
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo_2.jpg') %>", alt: '' } ) );
+    wrapper.eq(3).append(images);
+    images = [];
+
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo.jpg') %>", alt: '' } ) );
+    images.push( $('<img/>', { src: "<%= image_path('home_page/portfolio_demo_2.jpg') %>", alt: '' } ) );
+    wrapper.eq(4).append(images);
+    
+
+    wrapper.hover(
+        function() {
+            var e = $(this);
+            running = setInterval(function() {
+                var c = e.find('.active');
+                var n = c.next();
+                if (!n.length) {
+                    n = e.children().first();
+                }
+                c.removeClass('active');
+                n.addClass('active');    
+            }, 600);
+        },
+        function() {
+            clearInterval(running);
+            running = null;
+        }
+    );
+}); 
+    
