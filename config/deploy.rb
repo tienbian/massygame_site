@@ -3,13 +3,13 @@ lock "3.9.0"
 
 set :application, 'massygame_site'
 set :repo_url, 'git@github.com:tienbian/massygame_site.git'
+set :deploy_to, '/home/ryan/massygame_site'
+set :branch, 'master'
 
-ask :branch, 'master'
-
-# set :use_sudo, false
-# set :bundle_binstubs, nil
-# set :linked_files, fetch(:linked_files, []).push('config/database.yml')
-# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+set :use_sudo, false
+set :bundle_binstubs, nil
+append :linked_files, "config/database.yml", "config/secrets.yml"
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 after 'deploy:publishing', 'deploy:restart'
 
@@ -35,10 +35,10 @@ end
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml", "config/secrets.yml"
+# append :linked_files, "config/database.yml", "config/secrets.yml"
 
 # Default value for linked_dirs is []
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }

@@ -45,7 +45,7 @@ bower.json
 !/log/.keep
 /tmp
 config/database.yml~
-Gemfile.lock
+#Gemfile.lock
 db/schema.rb
 **/.DS_Store
 .DS_Store

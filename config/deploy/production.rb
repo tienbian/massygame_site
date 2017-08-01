@@ -70,7 +70,7 @@ server '0.0.0.0',
   user: fetch(:user),
   primary: true
 
-set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+
 
 set :ssh_options, {
   forward_agent: true,
