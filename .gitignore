@@ -51,3 +51,4 @@ db/schema.rb
 .DS_Store
 .ruby-versionconfig/database.yml
 config/secrets.yml
+config/database.yml
