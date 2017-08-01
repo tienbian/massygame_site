@@ -31,7 +31,12 @@ gem 'activeadmin', github: 'activeadmin'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-unicorn-nginx'
 gem 'unicorn'
+gem 'capistrano-rvm'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
