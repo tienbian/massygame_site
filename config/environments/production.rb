@@ -24,7 +24,9 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   #config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
   config.public_file_server.enabled = true
-  config.assets.precompile =  ['*.js', '*.css', '*.css.erb']
+  # config.assets.precompile =  ['*.js', '*.css', '*.css.erb']
+  config.assets.precompile += %w(*.svg *.eot *.woff *.ttf *.gif *.png *.ico)
+  config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
