@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blog_posts
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'page/about'

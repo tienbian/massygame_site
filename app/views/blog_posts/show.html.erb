@@ -1,0 +1,35 @@
+<%
+  meta_title "#{@blog_post.title} - MyCoolBlog"
+  # meta_keywords "#{@blog_post.categories.join(", ")}"
+  meta_description truncate(strip_tags(@blog_post.detail), length: 200)
+  meta_author @blog_post.author
+%>
+
+
+<main id="content">
+	<div class="content-body text-center">
+		<div class="m-l m-r"></div>
+		<div class="page-body page-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-xxs-12 col-lg-12 m-x-auto">
+						<section class="card card-lg" id="about-about">
+							<p id="notice"><%= notice %></p>
+
+							<h1>
+							  	Title: <%= @blog_post.title %>
+							</h1>
+
+							<p>
+							  <strong>Detail:</strong>
+							  <%= @blog_post.detail %>
+							</p>
+
+							<%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
+							<%= link_to 'Back', blog_posts_path %>
+						</section>
+        			</div>
+      			</div>
+    		</div>
+  		</div>
+	</div>
