@@ -1,3 +1,6 @@
+$output-bourbon-deprecation-warnings: false !default;
+
+
 /*
  *= require bootstrap
  *= require font_awesome
