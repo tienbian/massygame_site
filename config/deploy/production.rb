@@ -59,7 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-set :port, 32769
+set :port, 32772
 set :user, 'ryan'
 set :deploy_via, :remote_cache
 set :use_sudo, false
@@ -75,7 +75,7 @@ server '0.0.0.0',
 set :ssh_options, {
   forward_agent: true,
   auth_methods: %w(publickey),
-  user: 'deployer',
+  user: 'ryan'
 }
 
 set :rails_env, :production
